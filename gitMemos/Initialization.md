@@ -34,6 +34,9 @@ git config --global core.quotepath false
 
 
 ```git
-
 git config --list
 ```
+
+#### コマンドプロンプトの設定
+[右クリック] -> [プロパティ] -> [フォント] を一旦開いて閉じる。
+これでコンソールで日本語が表示されるようになる。
