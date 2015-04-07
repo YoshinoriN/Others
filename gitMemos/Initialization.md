@@ -46,3 +46,11 @@ git config --global core.quotepath false
 git config --list
 ```
 
+#### 設定の削除
+```git
+git config --unset 設定
+```
+```git
+[サンプル]
+git config --global --unset core.quotepath
+```
