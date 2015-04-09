@@ -16,12 +16,12 @@ git commit --amend
 git rebase --continue
 ```
 
-### ファイルを履歴ごと消す
+### ファイルを履歴ごと消す(全部ブランチ)
 ```git
 git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch フォルダ名' 
 ```
 
-### フォルダを履歴ごと消す
+### フォルダを履歴ごと消す(全部ブランチ)
 ```git
 git filter-branch -f --index-filter 'git rm -rf --cached --ignore-unmatch フォルダ名' 
 ```
