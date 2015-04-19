@@ -16,16 +16,15 @@ svndumpfilterで除外したいファイルを除いたSvn dumpファイルを�
 
 　(Rev**で追加でコミットとかよくやってるので、うちのチームでは両方とも使えない)
 
- 
+```svn
+svnadmin dump [Repository Path] | svndumpfilter exclude src/hoge.pdb document/hoo.xls > [Output dump file path]
+```
 #### その他
 
 Exportもとでごちゃごちゃブランチとかきってた場合エラーがでて失敗する。
 
 (不要なブランチだったので削除したらうまくいったはず・・・・これはだいぶ以前やったので覚えてない・・・)
 
-```svn
-svnadmin dump [Repository Path] | svndumpfilter exclude src/hoge.pdb document/hoo.xls > [Output dump file path]
-```
 
 2. Importする
 ---------------------
