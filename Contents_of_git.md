@@ -6,3 +6,4 @@ gitとGitHubの使い方メモ
 * [ファイル移動](gitMemos/FileManipulation.md)
 * [検索](gitMemos/Serach.md)
 * [履歴変更](gitMemos/ChangeHistory.md) 
+* [ファイル名を履歴ごと変更する](gitMemos/ChangeFileNameIncludeHistory.md) 
