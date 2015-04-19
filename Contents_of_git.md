@@ -1,5 +1,4 @@
-# git_GitHub_UseMemo
-gitとGitHubの使い方メモ
+# gitの使い方メモ
 
 * [初期設定](gitMemos/Initialization.md)
 * [ファイル基本操作](gitMemos/FileManipulation.md)
