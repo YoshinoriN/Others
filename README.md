@@ -1,2 +1,2 @@
 # CSharpStudy
-C# Study
+個人的なC#学習用リポジトリ
