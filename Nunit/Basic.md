@@ -12,6 +12,9 @@ Numitを起動する。
 
 テストされる側のプロジェクト
 
+※サンプルのメソッド名と戻り値が反対で紛らわしいが、なおすのが手間なのでこのまま・・・
+
+
 ```csharp
 using System;
 using System.Collections.Generic;
