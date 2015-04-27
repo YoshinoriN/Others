@@ -34,11 +34,6 @@ namespace NunitSample1
         /// </returns>
         public static bool IsDiff<Type>(Type x,Type y)
         {
-            if(!CompareType(x, y))
-            {
-                return false;
-            }
-
             if (x.Equals(y))
                 return true;
 
