@@ -17,7 +17,7 @@ namespace NunitSample1
         /// [一致:True]
         /// [不一致:False]
         /// </returns>
-        public static bool IsDiff<Type>(Type x,Type y)
+        public static bool IsSame<Type>(Type x,Type y)
         {
             if(!CompareType(x, y))
             {
