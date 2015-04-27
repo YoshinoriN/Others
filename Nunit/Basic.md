@@ -12,9 +12,6 @@ Numitを起動する。
 
 テストされる側のプロジェクト
 
-※サンプルのメソッド名と戻り値が反対で紛らわしいが、なおすのが手間なのでこのまま・・・
-
-
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -35,7 +32,7 @@ namespace NunitSample1
         /// [一致:True]
         /// [不一致:False]
         /// </returns>
-        public static bool IsDiff<Type>(Type x,Type y)
+        public static bool IsSame<Type>(Type x,Type y)
         {
             if (x.Equals(y))
                 return true;
@@ -100,12 +97,12 @@ namespace NunitSample1Test
     {
 
     [Test]
-        public void IsDiffTest()
+        public void IsSameTest()
         {
         int x =1;
         int y =2;
 
-        bool TestResult = NunitSample1.Compare.IsDiff(x,y);
+        bool TestResult = NunitSample1.Compare.IsSame(x,y);
 
         //戻り値がfalseなので期待値と同一のため、Nunitの実行結果はOKとなる
         Assert.AreEqual(false,TestResult);
@@ -137,9 +134,9 @@ public class NunitSample1Test
 /// <param name="expect">期待値</param>
 [TestCase(1, 2, false)]
 [TestCase(1, 1, true)]
-    public void IsDiffTest<Type>(Type x, Type y, bool expect)
+    public void IsSameTest<Type>(Type x, Type y, bool expect)
     {
-        bool TestResult= NunitSample1.Compare.IsDiff(x,y);
+        bool TestResult= NunitSample1.Compare.IsSame(x,y);
         Assert.AreEqual(expect, TestResult);
     }
 
@@ -154,8 +151,8 @@ public class NunitSample1Test
     [TestCase]
     public void IsDiffTest()
     {
-        Assert.AreEqual(true, NunitSample1.Compare.IsDiff(1,1));
-        Assert.AreEqual(false, NunitSample1.Compare.IsDiff(1,2));
+        Assert.AreEqual(true, NunitSample1.Compare.IsSame(1,1));
+        Assert.AreEqual(false, NunitSample1.Compare.IsSame(1,2));
     }
 
 }
@@ -169,16 +166,16 @@ public class NunitSample1Test
 public class NunitSample1Test
 {
     [TestCase]
-    public void IsDiffTest()
+    public void IsSameTest()
     {
         //正常でメッセージ指定なし。Nunitの実行結果にはなにも表示されない。
-        Assert.AreEqual(true, NunitSample1.Compare.IsDiff(1,1));
+        Assert.AreEqual(true, NunitSample1.Compare.IsSame(1,1));
         //正常でメッセージ指定しているが、Nunitの実行結果にはなにも表示されない。
-        Assert.AreEqual(false, NunitSample1.Compare.IsDiff(1,2),"問題なし!!");
+        Assert.AreEqual(false, NunitSample1.Compare.IsSame(1,2),"問題なし!!");
         //失敗だがメッセージを指定していないので、Nunitの実行結果にはなにも表示されない。
-        Assert.AreEqual(true, NunitSample1.Compare.IsDiff(1, 2));
+        Assert.AreEqual(true, NunitSample1.Compare.IsSame(1, 2));
         //失敗でメッセージを指定しているのでNunitの実行結果には「失敗です!!」のメッセージが表示される。
-        Assert.AreEqual(true, NunitSample1.Compare.IsDiff(1, 2),"失敗です!!");
+        Assert.AreEqual(true, NunitSample1.Compare.IsSame(1, 2),"失敗です!!");
     }
 }
 ```
