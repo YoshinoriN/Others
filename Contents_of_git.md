@@ -1,6 +1,7 @@
 # gitの使い方メモ
 
 * [初期設定](gitMemos/Initialization.md)
+* [無視ファイルの設定](gitMemos/gitignoreNotation.md) 
 * [ファイル基本操作](gitMemos/FileManipulation.md)
 * [ファイル移動](gitMemos/FileManipulation.md)
 * [検索](gitMemos/Serach.md)
