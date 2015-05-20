@@ -7,7 +7,7 @@ EXPDP [****]/[****]@[*****] DUMPFILE=[DirectoryName]:[FileName].DMP LOGFILE=[Dir
 
 * IMPORT
 ```sql
-EXPDP [****]/[****]@[*****] DUMPFILE=[DirectoryName]:[FileName].DMP
+IMPDP [****]/[****]@[*****] DUMPFILE=[DirectoryName]:[FileName].DMP LOGFILE=[DirectoryName]:[LogName].LOG
 ```
 
 
@@ -23,6 +23,9 @@ EXPDP [****]/[****]@[*****] DUMPFILE=[DirectoryName]:[FileName].DMP
 * DATA_ONLY		⇒データのみ
 * METADATA_ONLY	⇒メタデータのみ
 * ALL				⇒全て
+```sql
+CONTENT=DATAONLY
+```
 * REMAP_SCHEMA(スキーマ名指定してデータのロード)
 ```sql
 REMAP_SCHEMA=アンロードスキーマ:ロードスキーマ
