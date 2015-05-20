@@ -9,4 +9,5 @@ git fetch origin --prune 'refs/heads/*:refs/heads/*'
 ```git
 git fetch origin 'refs/heads/master:refs/heads/master'
 ```
+### その他
 * fast-forwardできない場合は、実行時にできなかったブランチの前に ![rejected] と表示される。
