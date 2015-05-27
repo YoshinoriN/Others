@@ -20,6 +20,7 @@ git rebase --continue
 
 #### 1. ファイルを履歴ごと消す
 * 特定の拡張子のファイルを消す場合、例えばtxtのファイルを消す場合は「*.txt」を指定する。
+* ファイル名はスペースで区切ることで複数指定可能。例えば「*.txt *.log *.pdb」でそれぞれの拡張子のファイルを一括で削除できる。
 ```git
 git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ファイル名' --prune-empty -- --all
 ```
