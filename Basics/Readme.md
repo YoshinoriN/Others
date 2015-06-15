@@ -4,4 +4,5 @@
 * [クラスのプロパティ](Contents/Property.md)
 * [StaticクラスとStaticメソッド](Contents/Static.md)
 * [構造体](Contents/Structure.md)
-
+* [抽象クラスと抽象メソッド](Contents/Abstract.md)
+* [object型とキャスト](Contents/Object.md)
