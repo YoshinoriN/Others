@@ -5,4 +5,4 @@
 * 複数のオブジェクト(同じ型のデータを集めた)を管理する構造・クラスのこと。
 
 
-* [List<T>](Contents/CollectionClass/List.md)
+* [List](CollectionClass/List.md)
