@@ -1,4 +1,4 @@
-* [条件演算子/三項演算子](Contents/ConditionalOperator .md )
+﻿* [条件演算子/三項演算子](Contents/ConditionalOperator .md )
 * [クラスのフィールド](Contents/Field.md)
 * [クラスのメソッド](Contents/Method.md)
 * [クラスのプロパティ](Contents/Property.md)
@@ -6,3 +6,4 @@
 * [構造体](Contents/Structure.md)
 * [抽象クラスと抽象メソッド](Contents/Abstract.md)
 * [object型とキャスト](Contents/Object.md)
+* [コレクションクラス](Contents/CollectionClass.md)
