@@ -6,3 +6,4 @@
 
 
 * [List](CollectionClass/List.md)
+* [Dictionary](CollectionClass/Dictionary.md)
