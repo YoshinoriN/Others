@@ -6,6 +6,5 @@
 * [コメントのないストアドを取得する](SQL/getNoCommentPlsql.md)
 * [ディレクトリオブジェクト](SQL/DireCtoryObject.md)
 * [表領域](SQL/TableSpace.md)
-* FGA
-
+* [FGA](SQL/FGA/Readme.md)
 
