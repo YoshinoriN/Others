@@ -1,15 +1,16 @@
 #### DATAPUMPコマンド
 
-* EXPORT
+##### EXPORT
+----------------
 ```sql
 EXPDP [****]/[****]@[*****] DUMPFILE=[DirectoryName]:[FileName].DMP LOGFILE=[DirectoryName]:[LogName].LOG
 ```
 
-* IMPORT
+##### IMPORT
+----------------
 ```sql
 IMPDP [****]/[****]@[*****] DUMPFILE=[DirectoryName]:[FileName].DMP LOGFILE=[DirectoryName]:[LogName].LOG
 ```
-
 
 [DirectoryName]⇒CREATE DIRECTORY で作った DirectoryName
 
@@ -18,7 +19,8 @@ IMPDP [****]/[****]@[*****] DUMPFILE=[DirectoryName]:[FileName].DMP LOGFILE=[Dir
 [LogName]⇒ログ出力するパス
 
 
-#### 個人的によくつかうオプション
+##### 個人的によくつかうオプション
+----------------------------------
 * COMMENT=*****
 * DATA_ONLY		⇒データのみ
 * METADATA_ONLY	⇒メタデータのみ
@@ -40,12 +42,14 @@ TESTテーブルをロード、アンロード
 
 パッケージを上書きするようなオプションは存在しない。
 
-#### DBLINKで直接流し込むとき
+##### DBLINKで直接流し込むとき
+------------------------------
 ```sql
 EXPDP   [EXP基]/[EXP基] DIRECTORY=[EXP基のDirectoryName] NETWORK_LINK=[DatBaseLinkName]
 ```
 
-* 途中で中断した場合
+##### 途中で中断した場合
+------------------------------
 ```sql
 [Kill_Job] と入力した後に [yes]
 ```
