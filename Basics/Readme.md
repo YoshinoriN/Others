@@ -7,3 +7,4 @@
 * [抽象クラスと抽象メソッド](Contents/Abstract.md)
 * [object型とキャスト](Contents/Object.md)
 * [コレクションクラス](Contents/CollectionClass.md)
+* [インターフェース](Contents/Interface.md)
