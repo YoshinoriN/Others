@@ -7,4 +7,4 @@
 * [ディレクトリオブジェクト](SQL/DireCtoryObject.md)
 * [表領域](SQL/TableSpace.md)
 * [FGA](SQL/FGA/Readme.md)
-
+* [全テーブルのレコード数を取得する](SQL/NumberOfRecords.sql)
