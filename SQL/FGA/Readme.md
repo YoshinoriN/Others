@@ -12,8 +12,8 @@
 
 ##### 実際のサンプル
 --------------------
-* [テーブル名で全テーブルの監査ポリシーを作成する](FGA/CreatePolicy.md)
-* [監査結果の確認](FGA/Confirmation.md)
-* [監査の有効化と無効化](FGA/PolicyEnableDisEnable.md)
-* [監査の削除](FGA/DropPolicy.md)
-* [監査ログの削除](FGA/TrancateAuditTable.md)
+* [テーブル名で全テーブルの監査ポリシーを作成する](CreatePolicy.md)
+* [監査結果の確認](Confirmation.md)
+* [監査の有効化と無効化](PolicyEnableDisEnable.md)
+* [監査の削除](DropPolicy.md)
+* [監査ログの削除](TrancateAuditTable.md)
