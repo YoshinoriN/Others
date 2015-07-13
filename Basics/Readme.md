@@ -8,3 +8,4 @@
 * [object型とキャスト](Contents/Object.md)
 * [コレクションクラス](Contents/CollectionClass.md)
 * [インターフェース](Contents/Interface.md)
+* [ジェネリック](Contents/Generic/Generic.md)
