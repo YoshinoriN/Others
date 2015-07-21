@@ -8,3 +8,4 @@
 * [表領域](SQL/TableSpace.md)
 * [FGA](SQL/FGA/Readme.md)
 * [全テーブルのレコード数を取得する](SQL/NumberOfRecords.sql)
+* [オブジェクトの依存関係を調べる](SQL/Dependence.md)
