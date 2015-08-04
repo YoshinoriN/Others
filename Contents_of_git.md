@@ -7,6 +7,7 @@
 * [検索](gitMemos/Serach.md)
 * [履歴変更](gitMemos/ChangeHistory.md) 
 * [ファイル名を履歴ごと変更する](gitMemos/ChangeFileNameIncludeHistory.md) 
+* [空コミットを削除する](gitMemos/RemoveEmptyCommit.md)
 * [複数のコミットをまとめる](gitMemos/FixUpAndSquash.md)
 * [Bareリポジトリの同期を取る](gitMemos/SyncBareToBare.md)
 * [Svnからの移行](gitMemos/MigrateFromSvn.md) 
