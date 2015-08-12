@@ -10,4 +10,5 @@
 * [空コミットを削除する](gitMemos/RemoveEmptyCommit.md)
 * [複数のコミットをまとめる](gitMemos/FixUpAndSquash.md)
 * [Bareリポジトリの同期を取る](gitMemos/SyncBareToBare.md)
+* [リポジトリのメンテナンス](gitMemos/Mentenance.md)
 * [Svnからの移行](gitMemos/MigrateFromSvn.md) 
