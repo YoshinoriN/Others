@@ -4,11 +4,11 @@
 * 位置は相対的に決まるので、各コンポーネントのマージンで指定することになる。
 
 ### レイアウトコントロール
-* UIコントロールの位置を決めるコンポーネントのこと。「DockPanel」や「StackPanel」がある。
+* UIコントロールの位置を決めるコンポーネントのこと。「Grid」「DockPanel」や「StackPanel」がある。
 * WPFでは全ての親要素が「Window」になる。この「Window」子要素を配置していく。
 * 子要素が望むサイズをもとに親要素が子要素を配置する。ただし、必ずしも子要素が望むサイズで配置されるとは限らない。
 
-例) Winodow ⇒ DockPanel ⇒ StackPanel ⇒ 各UIコントロール(テキストボックスとか)
+配置例) Winodow ⇒ DockPanel ⇒ StackPanel ⇒ 各UIコントロール(テキストボックスとか)
 
 下のサンプルはDockPanelの中に2つのStackPanelと各StackPanelの中にTextBox,TextBlockを配置したもの。
 
@@ -41,8 +41,41 @@
     </DockPanel>
 </Window>
 ```
+### MainWinodow.XamlとMainWinodow.xaml.cs
+* MainWinodow.XamlとMainWinodow.xaml.csはコンパイル時に合わせて1つのクラスになる。これはMainWindow.csクラスが「Partial」で宣言されていることを見てもわかる。
 
-### Xamlコードと
+### Grid
+* マス目のように分割し、そのマス目にUI要素を配置するレイアウトコントロール。利用機会が多いらしい。
+* 「RowDefinition」と「ColumnDefinition」で分割数を定義する。自動サイジング「Auto」と絶対値指定されたサイズ（下記の場合は「ColumnDefinition」の4列目の100）が確保される。そのあとに残りの全てが「*（下記でいうと「ColumnDefinition」の5列目）」に割り当てられる。
+
+
+```xml
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="100"/>
+        <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+</Grid>
+```
+
+* マス目にどのように配置するかは「Grid.Row="1"」「Grid.Column="3"」というように書く。省略した場合は、「0」を指定したとみなされる。
+
+```xml
+<TextBox Grid.Column="1" Text="入力してください"/>
+<Label Grid.Row="1" Content="題名"/>
+```
+
+
 
 ### 参考記事
 
