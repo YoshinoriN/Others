@@ -10,6 +10,7 @@
 * [ファイル名を履歴ごと変更する](gitMemos/ChangeFileNameIncludeHistory.md) 
 * [空コミットを削除する](gitMemos/RemoveEmptyCommit.md)
 * [複数のコミットをまとめる](gitMemos/FixUpAndSquash.md)
+* [追跡ブランチ](gitMemos/TrackingBranch.md)
 * [Bareリポジトリの同期を取る](gitMemos/SyncBareToBare.md)
 * [リポジトリのメンテナンス](gitMemos/Mentenance.md)
 * [Svnからの移行](gitMemos/MigrateFromSvn.md) 
