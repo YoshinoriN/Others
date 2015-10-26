@@ -9,3 +9,4 @@
 * [コレクションクラス](Contents/CollectionClass.md)
 * [インターフェース](Contents/Interface.md)
 * [ジェネリック](Contents/Generic/Generic.md)
+* [デリゲート](Contents/Generic/Delegate.md)
