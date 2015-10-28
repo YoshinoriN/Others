@@ -74,3 +74,36 @@ public class DelegateSample
     }
 }
 ```
+
+逆に-=でデリゲートに代入したメソッドを削除することができる。
+```csharp
+public class DelegateSample
+{
+    //hooという名前のデリゲートを定義する。
+    delegate void foo();
+
+    static void Main()
+    {
+        foo hogehoge = ShowMessage1;
+        hogehoge += ShowMessage2;
+        hogehoge += ShowMessage3;
+        //ShowMessage2の削除。
+        hogehoge -= ShowMessage2;
+        hogehoge();
+    }
+
+    static void ShowMessage1()
+    {
+        Console.Write("1つめ \n");
+    }
+    static void ShowMessage2()
+    {
+        Console.Write("2つめ \n");
+    }
+    static void ShowMessage3()
+    {
+        Console.Write("3つめ");
+        Console.ReadLine();
+    }
+}
+```
