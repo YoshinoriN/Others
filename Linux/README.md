@@ -1,4 +1,4 @@
 # Linux
 ---
 
-* [ディレクトリ](Basics/Directories.md)
+* [ディレクトリ](Basic/Directories.md)
