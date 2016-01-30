@@ -22,7 +22,7 @@ using System.Linq;
 
 LINQは遅延評価である。
 
-下記のコードの場合、filePathsには条件式が格納される。
+下記のコードの場合、filesには条件式が格納される。
 絞り込んだ条件式が実際に実行されるのはforeachの部分である。
 ```csharp
 var directoryInfo = new DirectoryInfo(path);
@@ -32,7 +32,7 @@ var files = directoryInfo.GetFiles()
             ;
 
 //格納された条件式が実行されるのはここである。
-foreach (var filePath in filePaths)
+foreach (var filePath in files)
             Console.WriteLine(filePath);
 ```
 
