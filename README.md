@@ -11,5 +11,6 @@
 * [Redmine](Redmine/README.md)
 * [Ruby](Ruby/README.md)
 * [Vagrant](Vagrant/README.md)
+* [Windows](Windows/README.md)
 * [git](git/README.md)
 * [php](php/README.md)
