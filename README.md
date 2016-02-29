@@ -7,6 +7,7 @@
 * [Linux](Linux/README.md)
 * [MySQL](MySQL/README.md)
 * [Oracle](Oracle/README.md)
+* [Ruby](Ruby/README.md)
 * [Vagrant](Vagrant/README.md)
 * [git](git/README.md)
 * [php](php/README.md)
