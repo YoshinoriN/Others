@@ -1,6 +1,10 @@
 # Others
 その他なんでもリポジトリ
 
+ディレクトリだけ作って、何も書いてないのもある。
+
+そのうち書く。
+
 * [Apache](Apache/README.md)
 * [C#](CSharp/README.md)
 * [GitBucket](GitBucket/README.md)
