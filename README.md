@@ -4,6 +4,7 @@
 * [Apache](Apache/README.md)
 * [C#](CSharp/README.md)
 * [GitBucket](GitBucket/README.md)
+* [JavaScript](JavaScript/README.md)
 * [Jenkins](Jenkins/README.md)
 * [Linux](Linux/README.md)
 * [MySQL](MySQL/README.md)
