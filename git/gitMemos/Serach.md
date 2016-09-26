@@ -21,3 +21,9 @@ git grep -i '検索対象'
 ```git
 git grep -I '検索対象' 
 ```
+
+### 行数を表示する
+
+```sh
+git config --global grep.lineNumber true
+```
