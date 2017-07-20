@@ -27,7 +27,12 @@ git config --global push.default simple
 
 ```
 
+#### 大文字小文字を区別
 
+```git
+git config --global core.ignorecase false
+git config core.ignorecase false
+```
 
 #### 日本語ファイル名のエスケープを回避する
 
@@ -37,10 +42,7 @@ git config --global core.quotepath false
 
 ```
 
-
-
 #### 設定の確認
-
 
 ```git
 git config --list
